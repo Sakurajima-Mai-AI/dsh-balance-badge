@@ -1,0 +1,6 @@
+# dsh-balance-badge bundle patch: one shared row mounting the package's Host
+# half; its browser half is discovered from the package.json `dsh.client`
+# declaration and served by dsh-client-modules.
+- insert:
+    - id: plugin-balance
+      name: 'dsh-balance-badge'

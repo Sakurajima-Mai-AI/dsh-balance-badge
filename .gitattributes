@@ -1,0 +1,8 @@
+# Keep the plugin's line endings exactly as authored: the DSH client bundles and
+# the self-check have both been broken by CRLF/LF mixing before.
+* text=auto eol=lf
+*.js    text eol=lf
+*.cjs   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf

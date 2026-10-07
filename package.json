@@ -1,0 +1,22 @@
+{
+  "name": "dsh-balance-badge",
+  "version": "0.2.0-rc.2",
+  "private": true,
+  "description": "在侧边栏底部（用户头像上方）实时显示 DeepSeek 账户余额与赠送额度",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "~4.0.4" },
+  "license": "MIT"
+}
